@@ -9,6 +9,23 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
 }
+.gotopbtn{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background: #c79cc8;
+    bottom: 30px;
+    right: 32px;
+    
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    
+    border-radius: 6px;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2733,7 +2750,7 @@ input, select, textarea {
 			font-size: 0.9em;
 			font-weight: 400;
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: center;
 		}
 
 		table thead {
