@@ -16,7 +16,7 @@
             <h1>우주라이크</h1>
             <p>간단한 음주량 관리</p>
                 <ul class="actions fit">
-                    <li><a class="button" onclick="alert('준비중입니다.')">WEB에서 시작</a></li>
+                    <li><a href="login.html" class="button">WEB에서 시작</a></li>
                     <li><a class="button" onclick="alert('준비중입니다.')">iOS에서 시작</a></li>
                 </ul>    
         </header>
@@ -92,7 +92,7 @@
                         <input type="radio" name="diagnosis1" value="0" id="diagnosis1_1" checked/>
                         <label for="diagnosis1_1">전혀 안마심</label>
                         <input type="radio" name="diagnosis1" value="1" id="diagnosis1_2"/>
-                        <label for="diagnosis1_2">월1회 미만</label>
+                        <label for="diagnosis1_2">월 1회</label>
                         <input type="radio" name="diagnosis1" value="2" id="diagnosis1_3"/>
                         <label for="diagnosis1_3">월 2~4회</label>
                         <input type="radio" name="diagnosis1" value="3" id="diagnosis1_4"/>
@@ -103,7 +103,8 @@
                     <br>
                     
                     <p>
-                        2. 술을 마시면 한번에 몇 잔정도 마십니까?
+                        2. 술을 마시면 한번에 몇 잔정도 마십니까? <br>
+                        (소주 3잔에 맥주 500ml 정도)
                     </p>
                     <div class="col-4 col-12-small">
                         <input type="radio" name="diagnosis2" value="0" id="diagnosis2_1" checked="checked" />
@@ -128,7 +129,7 @@
                         <input type="radio" name="diagnosis3" value="0" id="diagnosis3_1" checked="checked" />
                         <label for="diagnosis3_1">전혀 없음</label>
                         <input type="radio" name="diagnosis3" value="1" id="diagnosis3_2"/>
-                        <label for="diagnosis3_2">월1회 미만</label>
+                        <label for="diagnosis3_2">분기 1회</label>
                         <input type="radio" name="diagnosis3" value="2" id="diagnosis3_3"/>
                         <label for="diagnosis3_3">월 1회</label>
                         <input type="radio" name="diagnosis3" value="3" id="diagnosis3_4"/>
@@ -145,7 +146,7 @@
                         <input type="radio" name="diagnosis4" value="0" id="diagnosis4_1" checked="checked" />
                         <label for="diagnosis4_1">전혀 없음</label>
                         <input type="radio" name="diagnosis4" value="1" id="diagnosis4_2"/>
-                        <label for="diagnosis4_2">월1회 미만</label>
+                        <label for="diagnosis4_2">분기 1회</label>
                         <input type="radio" name="diagnosis4" value="2" id="diagnosis4_3"/>
                         <label for="diagnosis4_3">월 1회</label>
                         <input type="radio" name="diagnosis4" value="3" id="diagnosis4_4"/>
@@ -162,7 +163,7 @@
                         <input type="radio" name="diagnosis5" value="0" id="diagnosis5_1" checked="checked" />
                         <label for="diagnosis5_1">전혀 없음</label>
                         <input type="radio" name="diagnosis5" value="1" id="diagnosis5_2"/>
-                        <label for="diagnosis5_2">월1회 미만</label>
+                        <label for="diagnosis5_2">분기 1회</label>
                         <input type="radio" name="diagnosis5" value="2" id="diagnosis5_3"/>
                         <label for="diagnosis5_3">월 1회</label>
                         <input type="radio" name="diagnosis5" value="3" id="diagnosis5_4"/>
@@ -179,7 +180,7 @@
                         <input type="radio" name="diagnosis6" value="0" id="diagnosis6_1" checked="checked" />
                         <label for="diagnosis6_1">전혀 없음</label>
                         <input type="radio" name="diagnosis6" value="1" id="diagnosis6_2"/>
-                        <label for="diagnosis6_2">월1회 미만</label>
+                        <label for="diagnosis6_2">분기 1회</label>
                         <input type="radio" name="diagnosis6" value="2" id="diagnosis6_3"/>
                         <label for="diagnosis6_3">월 1회</label>
                         <input type="radio" name="diagnosis6" value="3" id="diagnosis6_4"/>
@@ -196,7 +197,7 @@
                         <input type="radio" name="diagnosis7" value="0" id="diagnosis7_1" checked="checked" />
                         <label for="diagnosis7_1">전혀 없음</label>
                         <input type="radio" name="diagnosis7" value="1" id="diagnosis7_2"/>
-                        <label for="diagnosis7_2">월1회 미만</label>
+                        <label for="diagnosis7_2">분기 1회</label>
                         <input type="radio" name="diagnosis7" value="2" id="diagnosis7_3"/>
                         <label for="diagnosis7_3">월 1회</label>
                         <input type="radio" name="diagnosis7" value="3" id="diagnosis7_4"/>
@@ -213,7 +214,7 @@
                         <input type="radio" name="diagnosis8" value="0" id="diagnosis8_1" checked="checked" />
                         <label for="diagnosis8_1">전혀 없음</label>
                         <input type="radio" name="diagnosis8" value="1" id="diagnosis8_2"/>
-                        <label for="diagnosis8_2">월1회 미만</label>
+                        <label for="diagnosis8_2">분기 1회</label>
                         <input type="radio" name="diagnosis8" value="2" id="diagnosis8_3"/>
                         <label for="diagnosis8_3">월 1회</label>
                         <input type="radio" name="diagnosis8" value="3" id="diagnosis8_4"/>
@@ -233,8 +234,9 @@
                         <label for="diagnosis9_2">있었지만, 지난 1년간에는 없었음</label>
                         <input type="radio" name="diagnosis9" value="2" id="diagnosis9_3"/>
                         <label for="diagnosis9_3">지난 1년 내내 있었음</label>
-                    <br>
                     </div>
+                    <br>
+                    
                     <p>
                         10. 친척이나 친구,의사가 당신이 술마시는 것을 걱정하거나 당신에게 술끊기를 권유한 적이 있습니까?
                     </p>
@@ -261,7 +263,7 @@
                 
                 <div>
                     <table>
-                        <thead align="center">
+                        <thead>
                             <tr>
                                 <th>점수</th>
                                 <th>결과</th>
@@ -340,44 +342,31 @@
 						<!-- Get Started -->
 			<section id="third" class="main special">
 				<header class="major">
-					<h2>Congue imperdiet</h2>
-					<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-					posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+					<h2>팀 B511</h2>
+					<p>
+					    홍익대학교 컴퓨터공학과 졸업프로젝트
+					</p>
+					<p>
+					    우측 하단부의 화살표를 클릭하여 우주라이크를 시작해보세요!
+					</p>
 				</header>
-				<footer class="major">
-					<ul class="actions special">
-                        <li>
-                            <a href="generic.html" class="button primary">Get Started</a>
-                        </li>
-						<li>
-                            <a href="generic.html" class="button">Learn More</a>
-                        </li>
-				    </ul>
-				</footer>
             </section>
 		</div>
 
 				<!-- Footer -->
 		<footer id="footer">
             <section>
-				<h2>Aliquam sed mauris</h2>
-				<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-				<ul class="actions">
-					<li>
-                       <a href="generic.html" class="button">Learn More</a>
-                    </li>
-            	</ul>
+				<h2>우주라이크</h2>
             </section>
 			<section>
-				<h2>Etiam feugiat</h2>
+				<h2>팀 B511</h2>
 			    <dl class="alt">
-					<dt>Address</dt>
-					<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-				    <dt>Phone</dt>
-					<dd>(000) 000-0000 x 0000</dd>
-					<dt>Email</dt>
-					<dd><a href="#">information@untitled.tld</a></dd>
+					<dt>Email1</dt>
+					<dd><a href="#">click_syk@naver.com</a></dd>
+					<dt>Email2</dt>
+					<dd><a href="#">tlswlgh120@naver.com</a></dd>
 				</dl>
+<!--
 				<ul class="icons">
 					<li>
 					    <a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a>
@@ -395,8 +384,11 @@
 					    <a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a>
                     </li>
 				</ul>
+-->
             </section>
-            <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+            <p class="copyright">
+                &copy; Design: <a href="https://html5up.net">HTML5 UP</a>
+            </p>
         </footer>
     </div>
     
